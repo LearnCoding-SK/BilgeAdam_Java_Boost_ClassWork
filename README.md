@@ -1,4 +1,9 @@
-# QUESTIONS;
+
+# THESE ARE THE QUESTIONS , ANSWERED THROUGH BILGE ADAM ACADEMY JAVA BOOST TRAINING BOOTCAMP.
+
+
+
+## QUESTIONS;
 
 ### Question 001;
 Today is the sunday. What will be the day after 178 days passed?
@@ -32,4 +37,30 @@ public class Question_001 {
     }
 
 }
+```
+### Question 002;
+Find the number between 1 and 100 that could be divide 5 or/and 8 => use while loop. could be answered with for loop.
+
+```java \n
+public class Question_002 {
+    public static void main(String[] args) {
+
+        int counter=1;
+        while(counter<=100){
+
+            if(counter%5==0 && counter%8==0){
+                System.out.println(counter + " could be divided by 5 and 8");
+            }else if(counter%8==0){
+                System.out.println(counter + " could be divided by 8");
+            }else if(counter%5==0){
+                System.out.println(counter + " could be divided by 5 ");
+            }else {
+                System.out.println(counter);
+            }
+            counter++;
+        }
+
+    }
+}
+
 ```
