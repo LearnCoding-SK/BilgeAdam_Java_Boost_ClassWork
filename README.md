@@ -5,6 +5,8 @@
 
 ## QUESTIONS;
 
+---
+
 ### Question 001;
 Today is the sunday. What will be the day after 178 days passed?
 
@@ -38,6 +40,7 @@ public class Question_001 {
 
 }
 ```
+---
 ### Question 002;
 Find the number between 1 and 100 that could be divide 5 or/and 8 => use while loop. could be answered with for loop.
 
@@ -62,5 +65,17 @@ public class Question_002 {
 
     }
 }
+```
+---
+### Question 003;
+Take a number from user and then create pattern below; <br>
+1<br>
+1 2<br>
+1 2 3<br>
+1 2 3 4<br>
+.<br>
+.<br>
+.
+``` java \n
 
 ```
