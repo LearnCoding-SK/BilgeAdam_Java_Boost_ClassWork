@@ -40,7 +40,7 @@ public class Question_001 {
 ### Question 002;
 Find the number between 1 and 100 that could be divide 5 or/and 8 => use while loop. could be answered with for loop.
 
-```java \n
+``` java \n
 public class Question_002 {
     public static void main(String[] args) {
 
@@ -86,14 +86,9 @@ public class Question_003 {
                 System.out.print(" " + j);
             }
             System.out.println();
-
-
-        }
-
-
+         }
     }
 }
-
 ```
 
 ---
@@ -121,9 +116,6 @@ public class Question_004 {
             }
             System.out.println();
         }
-
-
-
     }
 }
 ```
@@ -155,7 +147,108 @@ public class Question_005 {
                 }
 
             }
+        }
+}
+```
+
+---
+### Question 006;
+Find the numbers of odd numbers between 1 and 100
+
+``` java \n
+public class Question_006 {
+    public static void main(String[] args) {
+        int counter=0;
+        for (int i = 0; i <=100 ; i++) {
+
+            if(i%2==1){
+                counter++;
             }
+        }
+        System.out.println("number of odd numbers between 1 and 100 is = "+ counter);
+
+    }
+}
+```
+
+---
+### Question 007;
+take 3 number from user and determine big and small numbaer, then subtract small from big and print the subtraction
+``` java \n
+public class Question_007 {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("type three numbers");
+        System.out.println("type first number");
+        int number1 = input.nextInt();
+        System.out.println("type second number");
+        int number2 = input.nextInt();
+        System.out.println("type third number");
+        int number3 = input.nextInt();
+
+        int bigNumber;
+        int smallNumber;
+
+        bigNumber=number1;
+
+
+        if(number2>number1 && number2>number3)bigNumber=number2;
+        if(number3>number1 && number3>number2)bigNumber=number3;
+
+        smallNumber=number1;
+
+        if(number2<number1 && number2<number3) smallNumber=number2;
+        if(number3<number1 && number3<number2) smallNumber=number3;
+
+        int subtraction=bigNumber-smallNumber;
+
+        System.out.println("The subtraction is "+subtraction);
+    }
+}
+```
+
+---
+### Question 008;
+produce random number between 1 and 100 then ask the user to find this randomly produced number until user coulf find it.
+
+note; use Random class... it used like;
+Random random= new Random();
+int randomlyProducedNumber= random.nextInt(bound:100);
+
+``` java \n
+public class Question_008 {
+    public static void main(String[] args) {
+        Random random= new Random(100);
+        int randomlyProducedNumber = random.nextInt(100);
+        int guess;
+
+        // System.out.println("randomly produced number is "+randomlyProducedNumber);  ==> we don't print out the number.
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Computer produce random number between 1 and 100");
+        System.out.println("try to find it");
+
+        do{
+
+            System.out.println("enter your guess");
+
+            guess = input.nextInt();
+            if(  guess>=0 && guess<=100 && guess<randomlyProducedNumber ){
+                System.out.println("You guessed "+guess+" its wrong please increase the guess");
+
+            }else if( guess>=0 && guess<=100 && guess>randomlyProducedNumber ){
+                System.out.println("You guessed "+guess+" its wrong please decrease the guess");
+            }else  if(guess==randomlyProducedNumber){
+                System.out.println("You guessed "+guess+" its correct guess");
+            }else {
+                System.out.println("You guessed "+guess+" its not suitable for the range of numbers that randomly produced number is created. range is between 1 and 100");
+            }
+
+        }while(guess!=randomlyProducedNumber);
+    }
 }
 ```
 
