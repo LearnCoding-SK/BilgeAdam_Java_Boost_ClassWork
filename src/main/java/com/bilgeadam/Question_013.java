@@ -1,5 +1,5 @@
 package com.bilgeadam;
-// TODO SOLVE THE QOUESTION 013
+// TODO SOLVE THE QUESTION 013
 /**
  *      * * * * * * * * *
  *      * * * * * * * * *
